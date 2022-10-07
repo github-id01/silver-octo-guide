@@ -14,7 +14,9 @@
 </template>
 <script lang="ts">
 import { SfLoader, SfHeading } from '@storefront-ui/vue';
-import { useRoute, defineComponent } from '@nuxtjs/composition-api';
+import { 
+  // useRoute, 
+  defineComponent } from '@nuxtjs/composition-api';
 import AppHeader from "../components/AppHeader.vue"
 import BannerHome from "../components/BannerHome.vue"
 import Clients from "../components/Clients.vue"
@@ -43,13 +45,13 @@ export default defineComponent({
     Footer
   },
 
-  setup() {
-    const route = useRoute();
+  // setup() {
+  //   const route = useRoute();
 
-    return {
-      route,
-    };
-  },
+  //   return {
+  //     route,
+  //   };
+  // },
   head: {
     link: [{ rel: 'stylesheet', href: '/_nuxt/fonts.css' }],
   },

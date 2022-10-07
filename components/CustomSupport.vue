@@ -7,8 +7,8 @@
         <div class="bottom-divider"></div>
 
         <template>
-            <SfCarousel class="sf-carousel">
-                <SfCarouselItem>
+            <div class="sf-carousel-area">
+                <div><img src="../assets/images/icons/Gruppe 474.png" alt=""></div>
                     <div class="slider">
                         <img class="image" src="../assets/images/icons/Komponente 19 – 1.png" alt="">
                         <h4 class="title">Import customs clearance</h4>
@@ -18,8 +18,6 @@
                             correct HS code, coordination of physical inspection and duty management.</p>
                         <span class="learn-more"><img src="../assets/images/icons/Komponente 16 – 1.png" alt=""></span>
                     </div>
-                </SfCarouselItem>
-                <SfCarouselItem>
                     <div class="slider">
                         <img class="image" src="../assets/images/icons/Komponente 19 – 1.png" alt="">
                         <h4 class="title">Import customs clearance</h4>
@@ -29,8 +27,6 @@
                             correct HS code, coordination of physical inspection and duty management.</p>
                         <span class="learn-more"><img src="../assets/images/icons/Komponente 16 – 1.png" alt=""></span>
                     </div>
-                </SfCarouselItem>
-                <SfCarouselItem>
                     <div class="slider">
                         <img class="image" src="../assets/images/icons/Komponente 19 – 1.png" alt="">
                         <h4 class="title">Import customs clearance</h4>
@@ -40,8 +36,14 @@
                             correct HS code, coordination of physical inspection and duty management.</p>
                         <span class="learn-more"><img src="../assets/images/icons/Komponente 16 – 1.png" alt=""></span>
                     </div>
-                </SfCarouselItem>
-            </SfCarousel>
+                    <div><img src="../assets/images/icons/Gruppe 473.png" alt=""></div>
+                </div>
+                <div class="border-bottom"></div>
+                <div class="slider-icons">
+                    <img src="../assets/images/icons/Ellipse 115.png" alt="">
+                    <img src="../assets/images/icons/Ellipse 116.png" alt="">
+                    <img src="../assets/images/icons/Ellipse 116.png" alt="">
+                </div>
         </template>
     </div>
 </template>
@@ -83,9 +85,12 @@ export default defineComponent({
         margin: 30px auto 0;
     }
 
-    .sf-carousel {
+    .sf-carousel-area {
         padding-top: 30px;
-        border-bottom: 1px solid #cccccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
 
         .title {
             font-size: 16px;
@@ -98,6 +103,7 @@ export default defineComponent({
             font-size: 12px;
             color: #3D4D62;
             font-weight: 400;
+            line-height: 1.6;
         }
 
         .slider {
@@ -109,5 +115,17 @@ export default defineComponent({
         }
     }
 
+    .border-bottom {
+        border: 1px solid #cccccc;
+        width: 69%;
+        margin: 50px auto 20px auto;
+    }
+
+    .slider-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
 }
 </style>

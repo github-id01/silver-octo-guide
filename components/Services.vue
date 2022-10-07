@@ -36,23 +36,6 @@
                     <img src="../assets/images/icons/Komponente 15 – 1.png" alt="">
                 </div>
             </div>
-            
-            <template>
-                <SfCarousel>
-                  <SfCarouselItem><div>1</div></SfCarouselItem>
-                  <SfCarouselItem><div>2</div></SfCarouselItem>
-                  <SfCarouselItem><div>3</div></SfCarouselItem>
-                  <SfCarouselItem><div>4</div></SfCarouselItem>
-                  <SfCarouselItem><div>5</div></SfCarouselItem>
-                  <SfCarouselItem><div>6</div></SfCarouselItem>
-                  <SfCarouselItem><div>7</div></SfCarouselItem>
-                  <SfCarouselItem><div>8</div></SfCarouselItem>
-                  <SfCarouselItem><div>9</div></SfCarouselItem>
-                  <SfCarouselItem><div>10</div></SfCarouselItem>
-                  <SfCarouselItem><div>11</div></SfCarouselItem>
-                  <SfCarouselItem><div>12</div></SfCarouselItem>
-                </SfCarousel>
-              </template>
         </div>
     </div>
 </template>
