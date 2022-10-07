@@ -23,6 +23,20 @@
                 <div v-show=screenWidth class="card">
                     <img src="../assets/images/icons/Komponente 12 – 1.png" alt="">
                 </div>
+                <div v-show=!screenWidth class="icons-area">
+                    <div class="icons">
+                        <img src="../assets/images/icons/Ellipse 115.png" alt="">
+                        <img src="../assets/images/icons/Ellipse 116.png" alt="">
+                        <img src="../assets/images/icons/Ellipse 116.png" alt="">
+                        <img src="../assets/images/icons/Ellipse 116.png" alt="">
+                        <img src="../assets/images/icons/Ellipse 116.png" alt="">
+                        <img src="../assets/images/icons/Ellipse 116.png" alt="">
+                    </div>
+                    <div class="icons-sec">
+                        <span><img src="../assets/images/icons/Gruppe 474.png" alt=""></span>
+                        <span><img src="../assets/images/icons/Gruppe 520.png" alt=""></span>
+                    </div>
+                </div>
             </div>
 
             <div v-show=screenWidth class="cards-row">
@@ -127,10 +141,34 @@ export default defineComponent({
         .cards-row {
             display: flex;
             align-items: center;
+            @media (max-width: 1024px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
 
             .card {
                 width: 33.3%;
                 padding-top: 35px;
+
+                @media (max-width: 1024px) {
+                    padding-left: 30px;
+                }
+            }
+
+            .icons-area {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: 30px;
+
+                .icons {
+                    margin-left: 30px;
+                }
+
+                .icons-sec {
+                    margin-right: 20px;
+                }
             }
         }
     }

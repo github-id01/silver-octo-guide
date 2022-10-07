@@ -38,14 +38,6 @@
                   <option value="1">Value</option>
                   <option value="2">Value</option>
                 </select>
-                <!-- <SfSelect class="customer-select" :required="false" valid :disabled="false"
-                                    errorMessage="This field is not correct." value="" placeholder="Choice of Service*">
-                                    <SfSelectOption value="amaranth">Amaranth</SfSelectOption>
-                                    <SfSelectOption value="amber">Amber</SfSelectOption>
-                                    <SfSelectOption value="arctic-lime">Arctic lime</SfSelectOption>
-                                    <SfSelectOption value="bluetiful">Bluetiful</SfSelectOption>
-                                    <SfSelectOption value="buff">Buff</SfSelectOption>
-                                </SfSelect> -->
               </template>
               <div class="border-divider"></div>
               <div class="information-inputs">
@@ -111,14 +103,6 @@
                       <option value="1">Value</option>
                       <option value="2">Value</option>
                     </select>
-                    <!-- <SfSelect class="customer-select" :required="false" valid :disabled="false"
-                                            errorMessage="This field is not correct." value="" placeholder="Choice of Service*">
-                                            <SfSelectOption value="amaranth">Amaranth</SfSelectOption>
-                                            <SfSelectOption value="amber">Amber</SfSelectOption>
-                                            <SfSelectOption value="arctic-lime">Arctic lime</SfSelectOption>
-                                            <SfSelectOption value="bluetiful">Bluetiful</SfSelectOption>
-                                            <SfSelectOption value="buff">Buff</SfSelectOption>
-                                        </SfSelect> -->
                   </template>
                 </div>
                 <div class="customer-radios">
@@ -161,14 +145,6 @@
                   <option value="1">Value</option>
                   <option value="2">Value</option>
                 </select>
-                <!-- <SfSelect class="customer-select" :required="false" valid :disabled="false"
-                                    errorMessage="This field is not correct." value="" placeholder="Choice of Service*">
-                                    <SfSelectOption value="amaranth">Amaranth</SfSelectOption>
-                                    <SfSelectOption value="amber">Amber</SfSelectOption>
-                                    <SfSelectOption value="arctic-lime">Arctic lime</SfSelectOption>
-                                    <SfSelectOption value="bluetiful">Bluetiful</SfSelectOption>
-                                    <SfSelectOption value="buff">Buff</SfSelectOption>
-                                </SfSelect> -->
               </template>
               <template>
                 <button
@@ -226,6 +202,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+
+    @import "../assets/styles.scss";
 .sf-footer-section {
   background-color: #006b6e;
   padding: 100px 0;
