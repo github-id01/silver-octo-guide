@@ -13,10 +13,10 @@
                         <p class="new-customer">Are you a new or returning customer? *</p>
                         <div class="customer-radios">
                             <template>
-                                <SfRadio name="Shipping" value="store" label="New" />
+                                <SfRadio class="radioBtn" name="Shipping" value="store" label="New" />
                             </template>
                             <template>
-                                <SfRadio name="Shipping" value="store" label="Returning" />
+                                <SfRadio class="radioBtn" name="Shipping" value="store" label="Returning" />
                             </template>
                         </div>
                         <div class="customer-inputs">
@@ -159,6 +159,8 @@ export default defineComponent({
 </script>
   
 <style lang="scss" scoped>
+
+    @import "../assets/styles.scss";
 .sf-footer-section {
     background-color: #006B6E;
     padding: 100px 0;
@@ -215,10 +217,19 @@ export default defineComponent({
             .footer-form {
                 .new-customer {
                     font-weight: bold;
+
+                  
                 }
 
                 .customer-radios {
                     display: flex;
+
+                    .sf-radio__label{
+
+                        color: #ffffff;
+                    }
+                    
+
                     @media (max-width:768px){
                         flex-direction: column;
                     }
@@ -240,12 +251,17 @@ export default defineComponent({
                 }
 
                 .customer-inputs {
+    
                     .customer-select {
-                        .sf-select{
+                        .sf-select.is-selected {
                             .sf-select__dropdown {
                                 --select-height: 50px !important;
                             }
                         }
+                    }
+
+                    .sf-input input {
+                        border-radius: 4px !important;
                     }
 
                     .information-inputs {

@@ -77,12 +77,18 @@ export default defineComponent({
     mounted() {
         this.$nextTick(() => {
             window.addEventListener('resize', this.onResize);
+            window.addEventListener('load', this.onResize)
         })
     },
 
     beforeDestroy() {
         window.removeEventListener('resize', this.onResize);
+        window.addEventListener('load', this.onResize)
     },
+    beforeMount() {
+      window.addEventListener('load', this.onResize)
+    },
+
 
     methods: {
         onResize() {
@@ -93,7 +99,6 @@ export default defineComponent({
             }
         },
         activeDropDown (){
-          console.log("calling me-----")
           this.dropdownActive = !this.dropdownActive
         }
 
