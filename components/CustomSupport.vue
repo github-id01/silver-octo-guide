@@ -18,7 +18,7 @@
                             correct HS code, coordination of physical inspection and duty management.</p>
                         <span class="learn-more"><img src="../assets/images/icons/Komponente 16 – 1.png" alt=""></span>
                     </div>
-                    <div class="slider">
+                    <div v-show=screenWidth class="slider">
                         <img class="image" src="../assets/images/icons/Komponente 19 – 1.png" alt="">
                         <h4 class="title">Import customs clearance</h4>
                         <p class="subtitle">If you would like to import goods from a third country to within the
@@ -27,7 +27,7 @@
                             correct HS code, coordination of physical inspection and duty management.</p>
                         <span class="learn-more"><img src="../assets/images/icons/Komponente 16 – 1.png" alt=""></span>
                     </div>
-                    <div class="slider">
+                    <div v-show=screenWidth class="slider">
                         <img class="image" src="../assets/images/icons/Komponente 19 – 1.png" alt="">
                         <h4 class="title">Import customs clearance</h4>
                         <p class="subtitle">If you would like to import goods from a third country to within the
@@ -58,6 +58,31 @@ export default defineComponent({
         SfIcon,
         SfCarousel,
     },
+    data() {
+    return {
+      screenWidth: true
+    }
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      window.addEventListener('resize', this.onResize);
+    })
+  },
+
+  beforeDestroy() { 
+    window.removeEventListener('resize', this.onResize); 
+  },
+
+  methods: {  
+    onResize() {
+        if(window.innerWidth<1024){
+            this.screenWidth = false
+        }else{
+            this.screenWidth = true
+        }
+    }
+  }
 });
 </script>
 

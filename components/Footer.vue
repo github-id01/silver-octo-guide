@@ -1,47 +1,138 @@
 <template>
     <div class="sf-footer-section">
         <div class="footer-container">
-            <div class="footer-left">
-                <h3 class="footer-heading">Customs Support - Take the load off your mind</h3>
-                <div class="bottom-divider"></div>
-                <div class="footer-get-in-touch">
-                    <h4>Get in touch with one of our customs experts!</h4>
-                    <p>Fill in the contact form or use the chat function on the website.</p>
-                </div>
-                <div class="footer-form">
-                    <p class="new-customer">Are you a new or returning customer? *</p>
-                    <div class="customer-radios">
-                        <template>
-                            <SfRadio name="Shipping" value="store" label="New" />
-                        </template>
-                        <template>
-                            <SfRadio name="Shipping" value="store" label="Returning" />
-                        </template>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h3 class="footer-heading">Customs Support - Take the load off your mind</h3>
+                    <div class="bottom-divider"></div>
+                    <div class="footer-get-in-touch">
+                        <h4>Get in touch with one of our customs experts!</h4>
+                        <p>Fill in the contact form or use the chat function on the website.</p>
                     </div>
-                    <div class="customer-inputs">
-                        <template>
-                            <SfSelect class="customer-select" :required="false" valid :disabled="false"
-                                errorMessage="This field is not correct." value="" placeholder="Choice of Service*">
-                                <SfSelectOption value="amaranth">Amaranth</SfSelectOption>
-                                <SfSelectOption value="amber">Amber</SfSelectOption>
-                                <SfSelectOption value="arctic-lime">Arctic lime</SfSelectOption>
-                                <SfSelectOption value="bluetiful">Bluetiful</SfSelectOption>
-                                <SfSelectOption value="buff">Buff</SfSelectOption>
-                            </SfSelect>
-                        </template>
-                        <div class="border-divider"></div>
-                        <div class="information-inputs">
-                            <div class="informations">
+                    <div class="footer-form">
+                        <p class="new-customer">Are you a new or returning customer? *</p>
+                        <div class="customer-radios">
+                            <template>
+                                <SfRadio name="Shipping" value="store" label="New" />
+                            </template>
+                            <template>
+                                <SfRadio name="Shipping" value="store" label="Returning" />
+                            </template>
+                        </div>
+                        <div class="customer-inputs">
+                            <template>
+                                <SfSelect class="customer-select" :required="false" valid :disabled="false"
+                                    errorMessage="This field is not correct." value="" placeholder="Choice of Service*">
+                                    <SfSelectOption value="amaranth">Amaranth</SfSelectOption>
+                                    <SfSelectOption value="amber">Amber</SfSelectOption>
+                                    <SfSelectOption value="arctic-lime">Arctic lime</SfSelectOption>
+                                    <SfSelectOption value="bluetiful">Bluetiful</SfSelectOption>
+                                    <SfSelectOption value="buff">Buff</SfSelectOption>
+                                </SfSelect>
+                            </template>
+                            <div class="border-divider"></div>
+                            <div class="information-inputs">
+                                <div class="informations">
+                                    <template>
+                                        <SfInput class="custom-input" value="" label="" name="name"
+                                            placeholder="First name*" />
+                                    </template>
+                                </div>
+                                <div class="informations mr-0">
+                                    <template>
+                                        <SfInput class="custom-input" value="" label="" name="name"
+                                            placeholder="Last name*" />
+                                    </template>
+                                </div>
+                                <div class="informations">
+                                    <template>
+                                        <SfInput class="custom-input" value="" label="" name="name"
+                                            placeholder="Company*" />
+                                    </template>
+                                </div>
+                                <div class="informations mr-0">
+                                    <template>
+                                        <SfInput class="custom-input" value="" label="" name="name"
+                                            placeholder="Email*" />
+                                    </template>
+                                </div>
+                                <div class="informations">
+                                    <template>
+                                        <SfInput class="custom-input" value="" label="" name="name"
+                                            placeholder="Phone Number*" />
+                                    </template>
+                                </div>
+                                <div class="informations mr-0">
+                                    <template>
+                                        <SfSelect class="customer-select" :required="false" valid :disabled="false"
+                                            errorMessage="This field is not correct." value="" placeholder="Choice of Service*">
+                                            <SfSelectOption value="amaranth">Amaranth</SfSelectOption>
+                                            <SfSelectOption value="amber">Amber</SfSelectOption>
+                                            <SfSelectOption value="arctic-lime">Arctic lime</SfSelectOption>
+                                            <SfSelectOption value="bluetiful">Bluetiful</SfSelectOption>
+                                            <SfSelectOption value="buff">Buff</SfSelectOption>
+                                        </SfSelect>
+                                    </template>
+                                </div>
+                                <div class="customer-radios">
+                                    <div class="informations">
+                                        <template>
+                                            <div class="custom-radios">
+                                                <SfRadio name="Shipping" value="store" label="I agree with the" />
+                                                <a href="">Terms and Conditions*</a>
+                                            </div>
+                                        </template>
+                                    </div>
+                                    <div class="informations">
+                                        <template>
+                                            <div class="custom-radios">
+                                                <SfRadio name="Shipping" value="store" label="I want to sign up for the newsletter" />
+                                                <a href=""></a>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </div>
                                 <template>
-                                    <SfInput class="custom-input" value="" label="" name="name"
-                                        placeholder="First name*" />
+                                    <button class="color-primary sf-button get-touch-button" :aria-disabled="false" :link="null"
+                                        type="button" aria-label="button">
+                                        Brexit and customs: get ready!
+                                    </button>
                                 </template>
                             </div>
-                            <div class="informations">
-                                <template>
-                                    <SfInput class="custom-input" value="" label="" name="name"
-                                        placeholder="First name*" />
-                                </template>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="personal-section">
+                        <h4>You prefer a personal contact?</h4>
+                        <p>Please find the phone numbers of our locations below.</p>
+                        <div class="personal-input">
+                            <template>
+                                <SfSelect class="customer-select" :required="false" valid :disabled="false"
+                                    errorMessage="This field is not correct." value="" placeholder="Choice of Service*">
+                                    <SfSelectOption value="amaranth">Amaranth</SfSelectOption>
+                                    <SfSelectOption value="amber">Amber</SfSelectOption>
+                                    <SfSelectOption value="arctic-lime">Arctic lime</SfSelectOption>
+                                    <SfSelectOption value="bluetiful">Bluetiful</SfSelectOption>
+                                    <SfSelectOption value="buff">Buff</SfSelectOption>
+                                </SfSelect>
+                            </template>
+                            <template>
+                                <button class="color-primary sf-button get-touch-button" :aria-disabled="false" :link="null"
+                                    type="button" aria-label="button">
+                                    Brexit and customs: get ready!
+                                </button>
+                            </template>
+                            <div class="border-divider"></div>
+                        </div>
+                        <div class="profile">
+                            <h4>„Let’s grow together!“</h4>
+                            <div class="profile-details">
+                                <img src="../assets/images/icons/profile-img.png" alt="">
+                                <div class="profile-info">
+                                    <h5>Michael Doe</h5>
+                                    <p>Customer Support Lead <br> CSG</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -75,13 +166,15 @@ export default defineComponent({
         max-width: 1270px;
         margin: auto;
         color: white;
-
+        .footer-row{
+            display: flex;
+        }
         .footer-left {
             display: flex;
             flex-direction: column;
-            flex-basis: 70%;
-            max-width: 70%;
-
+            flex-basis: 67%;
+            max-width: 67%;
+            padding-right: 50px;
             .footer-heading {
                 margin-bottom: 0;
                 font-size: 30px;
@@ -114,6 +207,14 @@ export default defineComponent({
 
                 .customer-radios {
                     display: flex;
+                    .custom-radios{
+                        display: flex;
+                        align-items: center;
+                        a{
+                            color: white;
+                            text-decoration: underline;
+                        }
+                    }
 
                     .sf-radio {
                         label {
@@ -129,32 +230,121 @@ export default defineComponent({
                         }
                     }
 
-                    .border-divider {
-                        border-bottom: 1px solid #fff;
-                        opacity: 0.25;
-                        height: 1px;
-                        width: 100%;
-                        margin: 30px 0;
-                    }
-
                     .information-inputs {
                         display: flex;
+                        flex-wrap: wrap;
                         .informations {
                             display: flex;
                             max-width: 100%;
-                            flex-basis: 48%;
-                            &:nth-of-type(even){
-                                margin-right: 10px;
+                            flex-basis: 49.3%;
+                            padding: 0 10px 20px 0;
+                            &.mr-0{
+                                padding-right: 0;
                             }
-                            .custom-input {
+                            .sf-input{
                                 --input-background: white;
-                                --input-padding: 20px;
+                                --input-padding: 0 20px;
                                 --input-width: 100%;
+                                input{
+                                    border-radius: 4px !important;
+                                }
+                            }
+                        }
+                        .customer-select{
+                            --select-width: 100%;
+                            --select-height: 50px;
+                            --select-padding: 0;
+                            .sf-select__dropdown{
+                                .sf-select__placeholder{
+                                    font-family: 'IBM Plex', Sans;
+                                }
+                            }
+                        }
+                        .customer-radios{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .get-touch-button{
+                width: 50%;
+            }
+        }
+        .footer-right{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            flex-basis: 33.33%;
+            max-width: 33.33%;
+            position: relative;
+            margin: auto;
+            &::before{
+                content: '';
+                position: absolute;
+                top: -100px;
+                left: 0;
+                height: calc(100% + 200px);
+                width: 1px;
+                background-color: #fff;
+                opacity: 0.25;
+            }
+            .personal-section{
+                padding: 0 40px;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                .profile{
+                    color: white;
+                    h4{
+                        font-size: 25px;
+                        font-weight: 400;
+                    }
+                    .profile-details{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 10px;
+                        img{
+                            height: 81px;
+                            width: 81px;
+                            border-radius: 50%;
+                        }
+                        .profile-info{
+                            h5{
+                                font-size: 16px;
+                                margin-bottom: 8px;
                             }
                         }
                     }
                 }
             }
+        }
+        .get-touch-button {
+            height: 50px;
+            border-radius: 4px;
+            text-transform: unset;
+            background-color: #01A4B7;
+            font-size: 16px;
+            color: #ffffff;
+            font-weight: 600;
+            margin-right: 20px;
+            width: 100%;
+            margin-top: 20px;
+    
+            @media (max-width: 1024px) {
+                width: 90%;
+                margin-top: 20px;
+                margin-right: 40px;
+            }
+        }
+        .border-divider {
+            border-bottom: 1px solid #fff;
+            opacity: 0.25;
+            height: 1px;
+            width: 100%;
+            margin: 30px 0;
         }
     }
 }

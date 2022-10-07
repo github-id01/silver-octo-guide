@@ -17,15 +17,15 @@
                 <div class="card">
                     <img src="../assets/images/icons/Komponente 10 – 1.png" alt="">
                 </div>
-                <div class="card">
+                <div v-show=screenWidth class="card">
                     <img src="../assets/images/icons/Komponente 11 – 1.png" alt="">
                 </div>
-                <div class="card">
+                <div v-show=screenWidth class="card">
                     <img src="../assets/images/icons/Komponente 12 – 1.png" alt="">
                 </div>
             </div>
 
-            <div class="cards-row">
+            <div v-show=screenWidth class="cards-row">
                 <div class="card">
                     <img src="../assets/images/icons/Komponente 13 – 1.png" alt="">
                 </div>
@@ -53,6 +53,32 @@ export default defineComponent({
         SfIcon,
         SfCarousel,
     },
+
+    data() {
+        return {
+            screenWidth: true
+        }
+    },
+
+    mounted() {
+        this.$nextTick(() => {
+            window.addEventListener('resize', this.onResize);
+        })
+    },
+
+    beforeDestroy() {
+        window.removeEventListener('resize', this.onResize);
+    },
+
+    methods: {
+        onResize() {
+            if (window.innerWidth < 1024) {
+                this.screenWidth = false
+            } else {
+                this.screenWidth = true
+            }
+        }
+    }
 });
 </script>
   
@@ -68,16 +94,18 @@ export default defineComponent({
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             @media (max-width: 1024px) {
                 flex-direction: column;
                 padding-left: 35px;
             }
-            
+
 
             .heading {
                 font-size: 30px;
                 color: #3D4D62;
                 padding-right: 40px;
+
                 @media (max-width: 1024px) {
                     font-size: 25px;
                 }
@@ -90,6 +118,7 @@ export default defineComponent({
             border-radius: 20px;
             margin-top: 30px;
             background-color: #01a4b7;
+
             @media (max-width: 1024px) {
                 margin-left: 35px;
             }
