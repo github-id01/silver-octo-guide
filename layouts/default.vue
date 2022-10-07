@@ -10,6 +10,7 @@
     <CustomSupport/>
     <CustomClearance/>
     <Footer/>
+    <SubFooter/>
   </div>
 </template>
 <script lang="ts">
@@ -27,6 +28,7 @@ import ShipBanner from "../components/ShipBanner.vue"
 import CustomSupport from "../components/CustomSupport.vue"
 import CustomClearance from "../components/CustomClearance.vue"
 import Footer from "../components/Footer.vue"
+import SubFooter from '~/components/SubFooter.vue';
 
 export default defineComponent({
   name: 'DefaultLayout',
@@ -42,8 +44,9 @@ export default defineComponent({
     ShipBanner,
     CustomSupport,
     CustomClearance,
-    Footer
-  },
+    Footer,
+    SubFooter
+},
 
   // setup() {
   //   const route = useRoute();
