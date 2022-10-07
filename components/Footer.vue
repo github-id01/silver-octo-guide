@@ -24,12 +24,6 @@
                 <input type="radio" name="customer" id="customerReturning" />
                 <label for="customerReturning" class="form-control">Returning</label>
               </div>
-              <!-- <template>
-                                <SfRadio name="Shipping" value="store" label="New" />
-                            </template>
-                            <template>
-                                <SfRadio name="Shipping" value="store" label="Returning" />
-                            </template> -->
             </div>
             <div class="customer-inputs">
               <template>
@@ -442,6 +436,11 @@ export default defineComponent({
       margin-right: 20px;
       width: 100%;
       margin-top: 20px;
+      &:hover {
+        height: 60px;
+        background-color: #ffffff;
+        color: #01a4b7;
+      }
 
       @media (max-width: 1024px) {
         width: 90%;

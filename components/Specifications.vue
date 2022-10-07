@@ -128,6 +128,13 @@ export default defineComponent({
         font-weight: 600;
         margin-right: 20px;
         margin: 0 auto;
+
+        &:hover {
+            height: 60px;
+            background-color: #ffffff;
+            color: #006b6e;
+        }
+
         @media (max-width: 1024px) {
             width: 80%;
         }

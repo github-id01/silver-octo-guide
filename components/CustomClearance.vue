@@ -79,6 +79,12 @@ export default defineComponent({
                 color: #ffffff;
                 font-weight: 600;
                 margin-right: 20px;
+
+                &:hover {
+                    background-color: #ffffff;
+                    color: #01a4b7;
+                    height: 60px;
+                }
         
                 @media (max-width: 1024px) {
                     width: 90%;

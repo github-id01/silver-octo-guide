@@ -172,6 +172,11 @@ export default defineComponent({
     color: #ffffff;
     font-weight: 600;
     margin-right: 20px;
+
+    &:hover {
+      height: 60px;
+      background-color: #007E91;
+    }
     @media (max-width: 1024px) {
       display: none;
     }
