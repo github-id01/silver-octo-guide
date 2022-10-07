@@ -1,5 +1,7 @@
 {
   "reject": [
-    "typescript"
+    "husky",
+    "ts-loader",
+    "webpack"
   ]
 }
