@@ -8,7 +8,7 @@
 
         <template>
             <div class="sf-carousel-area">
-                <div><img src="../assets/images/icons/Gruppe 474.png" alt=""></div>
+                <div class="img"><img src="../assets/images/icons/Gruppe 474.png" alt=""></div>
                     <div class="slider">
                         <img class="image" src="../assets/images/icons/Komponente 19 – 1.png" alt="">
                         <h4 class="title">Import customs clearance</h4>
@@ -36,7 +36,7 @@
                             correct HS code, coordination of physical inspection and duty management.</p>
                         <span class="learn-more"><img src="../assets/images/icons/Komponente 16 – 1.png" alt=""></span>
                     </div>
-                    <div><img src="../assets/images/icons/Gruppe 473.png" alt=""></div>
+                    <div class="img"><img src="../assets/images/icons/Gruppe 473.png" alt=""></div>
                 </div>
                 <div class="border-bottom"></div>
                 <div class="slider-icons">
@@ -116,6 +116,11 @@ export default defineComponent({
         align-items: center;
         justify-content: center;
         gap: 50px;
+
+        @media (max-width:1024px) {
+            gap: 20px;
+        }
+
 
         .title {
             font-size: 16px;
