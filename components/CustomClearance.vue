@@ -34,24 +34,41 @@ export default defineComponent({
 <style lang="scss" scoped>
 .sf-custom-clearance {
     background-image: url('../assets/images/icons/Gruppe\ maskieren\ 6.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 600px;
-
+    @media (max-width: 1440px){
+        width: 100%;
+    }
     .overlay-data {
         max-width: 50%;
         background-image: url('../assets/images/icons/Rechteck\ 982.png');
         height: 600px;
         display: flex;
         align-items: center;
+        @media(max-width:768px){
+            margin-top: auto;
+            max-width: 100%;
+            align-items: flex-end;
+        }
         .text-work {
             max-width: 70%;
-            margin: 0 auto;
-            margin-left: auto;
+            margin: 0 0 0 auto;
+            @media(max-width:768px){
+                margin: auto;
+                margin-bottom: 40px;
+            }
             h3{
                 color: white;
                 font-size: 30px;
             }
             .content-text{
                 color: white;
+                max-width: 80%;
+                @media(max-width:768px){
+                    max-width: 100%;
+                }
             }
             .get-touch-button {
                 height: 50px;

@@ -38,7 +38,7 @@
                                             placeholder="First name*" />
                                     </template>
                                 </div>
-                                <div class="informations mr-0">
+                                <div class="informations pr-0">
                                     <template>
                                         <SfInput class="custom-input" value="" label="" name="name"
                                             placeholder="Last name*" />
@@ -50,7 +50,7 @@
                                             placeholder="Company*" />
                                     </template>
                                 </div>
-                                <div class="informations mr-0">
+                                <div class="informations pr-0">
                                     <template>
                                         <SfInput class="custom-input" value="" label="" name="name"
                                             placeholder="Email*" />
@@ -62,7 +62,7 @@
                                             placeholder="Phone Number*" />
                                     </template>
                                 </div>
-                                <div class="informations mr-0">
+                                <div class="informations pr-0">
                                     <template>
                                         <SfSelect class="customer-select" :required="false" valid :disabled="false"
                                             errorMessage="This field is not correct." value="" placeholder="Choice of Service*">
@@ -126,6 +126,7 @@
                             <div class="border-divider"></div>
                         </div>
                         <div class="profile">
+                            <div class="border-divider top"></div>
                             <h4>„Let’s grow together!“</h4>
                             <div class="profile-details">
                                 <img src="../assets/images/icons/profile-img.png" alt="">
@@ -166,15 +167,26 @@ export default defineComponent({
         max-width: 1270px;
         margin: auto;
         color: white;
+        width: 100%;
+        @media (max-width:1440px){
+            width: 80%;
+        }
         .footer-row{
             display: flex;
+            width: 100%;
+            @media (max-width:768px){
+                flex-direction: column;
+            }
         }
         .footer-left {
             display: flex;
             flex-direction: column;
             flex-basis: 67%;
-            max-width: 67%;
+            max-width: 100%;
             padding-right: 50px;
+            @media (max-width:768px){
+                padding-right: 0;
+            }
             .footer-heading {
                 margin-bottom: 0;
                 font-size: 30px;
@@ -196,7 +208,7 @@ export default defineComponent({
                 background-color: #01a4b7;
 
                 @media (max-width: 1024px) {
-                    margin-left: 35px;
+                    margin-left: 0;
                 }
             }
 
@@ -207,9 +219,13 @@ export default defineComponent({
 
                 .customer-radios {
                     display: flex;
+                    @media (max-width:768px){
+                        flex-direction: column;
+                    }
                     .custom-radios{
                         display: flex;
                         align-items: center;
+                        color: white;
                         a{
                             color: white;
                             text-decoration: underline;
@@ -225,8 +241,10 @@ export default defineComponent({
 
                 .customer-inputs {
                     .customer-select {
-                        .sf-select__dropdown {
-                            height: 50px !important;
+                        .sf-select{
+                            .sf-select__dropdown {
+                                --select-height: 50px !important;
+                            }
                         }
                     }
 
@@ -238,7 +256,14 @@ export default defineComponent({
                             max-width: 100%;
                             flex-basis: 49.3%;
                             padding: 0 10px 20px 0;
-                            &.mr-0{
+                            @media (max-width:1440px){
+                                flex-basis: 49%;
+                            }
+                            @media (max-width:768px){
+                                flex-basis: 100%;
+                                padding-right: 0;
+                            }
+                            &.pr-0{
                                 padding-right: 0;
                             }
                             .sf-input{
@@ -268,6 +293,9 @@ export default defineComponent({
             }
             .get-touch-button{
                 width: 50%;
+                @media(max-width:768px){
+                    width: 100%;
+                }
             }
         }
         .footer-right{
@@ -275,9 +303,10 @@ export default defineComponent({
             flex-direction: column;
             height: 100%;
             flex-basis: 33.33%;
-            max-width: 33.33%;
+            max-width: 100%;
             position: relative;
             margin: auto;
+
             &::before{
                 content: '';
                 position: absolute;
@@ -287,6 +316,9 @@ export default defineComponent({
                 width: 1px;
                 background-color: #fff;
                 opacity: 0.25;
+                @media (max-width:768px){
+                    display: none;
+                }
             }
             .personal-section{
                 padding: 0 40px;
@@ -295,26 +327,48 @@ export default defineComponent({
                 flex-direction: column;
                 justify-content: center;
                 height: 100%;
+                @media (max-width:768px){
+                    margin-top: 25px;
+                    padding: 0;
+                }
                 .profile{
                     color: white;
                     h4{
                         font-size: 25px;
                         font-weight: 400;
+                        @media (max-width:768px){
+                            text-align: center;
+                        }
                     }
                     .profile-details{
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
                         margin-top: 10px;
+                        @media (max-width:768px){
+                            flex-direction: column;
+                        }
                         img{
                             height: 81px;
                             width: 81px;
                             border-radius: 50%;
                         }
                         .profile-info{
+                            @media (max-width:768px){
+                                text-align: center;
+                            }
                             h5{
                                 font-size: 16px;
                                 margin-bottom: 8px;
+                                @media (max-width:768px){
+                                    margin-bottom: 0;
+                                }
+                            }
+                            p{
+                                @media (max-width:768px){
+                                    margin-top: 5px;
+                                    line-height: 1.5;
+                                }
                             }
                         }
                     }
@@ -345,6 +399,12 @@ export default defineComponent({
             height: 1px;
             width: 100%;
             margin: 30px 0;
+            &.top{
+                display: none;
+                @media (max-width:768px){
+                    display: block;
+                }
+            }
         }
     }
 }
