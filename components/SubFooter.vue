@@ -45,7 +45,7 @@ export default defineComponent({
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
-                @media (max-width:768px){
+                @media (max-width:1024px){
                     flex-direction: column;
                 }
                 .footer-links{
@@ -53,7 +53,7 @@ export default defineComponent({
                         margin-right: 10px;
                         font-size: 16px;
                         font-weight: bold;
-                        @media (max-width:768px){
+                        @media (max-width:1024px){
                             display: flex;
                             padding: 10px 0;
                             flex-direction: column;
@@ -63,7 +63,7 @@ export default defineComponent({
                 }
                 .copyright-details{
                     font-weight: 400;
-                    @media (max-width:768px){
+                    @media (max-width:1024px){
                         margin-top: 20px;
                     }
                 }

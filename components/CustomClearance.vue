@@ -47,7 +47,7 @@ export default defineComponent({
         height: 600px;
         display: flex;
         align-items: center;
-        @media(max-width:768px){
+        @media(max-width:1024px){
             margin-top: auto;
             max-width: 100%;
             align-items: flex-end;
@@ -55,7 +55,7 @@ export default defineComponent({
         .text-work {
             max-width: 70%;
             margin: 0 0 0 auto;
-            @media(max-width:768px){
+            @media(max-width:1024px){
                 margin: auto;
                 margin-bottom: 40px;
             }
@@ -66,7 +66,7 @@ export default defineComponent({
             .content-text{
                 color: white;
                 max-width: 80%;
-                @media(max-width:768px){
+                @media(max-width:1024px){
                     max-width: 100%;
                 }
             }
